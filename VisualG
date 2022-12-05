@@ -1,0 +1,42 @@
+
+var
+   linha, coluna: inteiro
+   funcionario: vetor[1..5, 1..5] de caractere
+   nome, idade, sexo, salario, dadosdofuncionarios: caractere
+   i, j : inteiro
+   menoridade, maioridade, nomemaior, nomenor: caractere
+
+
+
+
+
+Inicio
+   //preenchimento de informacoes
+   escreval("informe dados do funcionario na seguinte ordem:")
+   escreval("nome")
+   escreval ("sexo")
+   escreval("idade")
+   escreval ("salario")
+
+   escreval("---------------------")
+
+   para i de 1 ate 5 faca
+      escreval ("Dados do funcionario","", i+1)
+      para j de 1 ate  5 faca
+         leia (funcionario[i,j])
+      fimpara
+   fimpara
+
+   //mostrar a matriz
+
+   escreval ("Leitura da matriz e representacao dos dados")
+   escreval("nome, idade, sexo, salario")
+   para linha de 1 ate 5 faca
+   escreval ("-")
+   para coluna de 1 ate 5 faca
+      escreval (funcionario [linha, coluna]," | " )
+   fimpara
+   fimpara
+
+
+Fimalgoritmo
